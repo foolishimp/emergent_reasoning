@@ -7,7 +7,7 @@ This paper proposes a unified formal framework explaining how LLMs produce struc
 Embedding clusters form proto-symbolic attractor regions — Markov objects with approximate conditional independence boundaries — enabling symbolic-like behavior to emerge from continuous computations. Hallucinations arise from multiple structural causes: trajectory exit from well-constrained regions, competing attractor interference, and misleading constraint structure. The framework bridges connectionist and symbolic AI by showing both paradigms instantiate a shared abstract unification principle — one discrete and explicit, the other continuous and implicit.
 
 **Paper**: [emergent_reasoning_v3.md](emergent_reasoning_v3.md) | [emergent_reasoning_v3.pdf](emergent_reasoning_v3.pdf)
-**Published on**: [Zenodo](https://zenodo.org/records/16592400)
+**Published on**: [Zenodo](https://zenodo.org/records/16592399)
 **Parent framework**: [Constraint-Emergence Ontology](https://github.com/foolishimp/constraint_emergence_ontology)
 
 ## Version 3 (February 2026)
@@ -78,4 +78,4 @@ This work contributes to understanding LLMs not as truth machines but as sophist
 
 If you use this analysis in your research, please cite:
 
-Popov, D. (2026). Emergent Reasoning in Large Language Models: A Topological and Constraint-Based Formalization (Version 3). Zenodo. https://zenodo.org/records/16592400
+Popov, D. (2026). Emergent Reasoning in Large Language Models: A Topological and Constraint-Based Formalization (Version 3). Zenodo. https://doi.org/10.5281/zenodo.16592399
