@@ -78,6 +78,6 @@ This work contributes to understanding LLMs not as truth machines but as sophist
 
 ## Citation
 
-If you use this analysis in your research, please cite the original paper:
+If you use this analysis in your research, please cite:
 
-Popov, D. (2024). Emergent Reasoning in Large Language Models: Soft Unification, Constraint Mechanisms, and Computational Traversal. Zenodo. https://zenodo.org/records/16592400
+Popov, D. (2026). Emergent Reasoning in Large Language Models: A Topological and Constraint-Based Formalization (Version 3). Zenodo. https://zenodo.org/records/16592400
