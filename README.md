@@ -10,6 +10,19 @@ The work investigates how LLMs exhibit reasoning behaviors through "soft unifica
 
 The theoretical foundation for this work is available at: [https://zenodo.org/records/16592400](https://zenodo.org/records/16592400)
 
+### Version 3 (February 2026)
+
+[emergent_reasoning_v3.md](emergent_reasoning_v3.md) | [emergent_reasoning_v3.pdf](emergent_reasoning_v3.pdf)
+
+Version 3 incorporates backflows from the mature [Constraint-Emergence Ontology](https://github.com/foolishimp/constraint_emergence_ontology):
+
+- **Local preorder traversal**: D(x,c) reframed as an instance of a universal computational primitive
+- **Markov object alignment**: Proto-symbols formalized as Markov objects with the Conditional Independence Conjecture
+- **Multi-causal hallucination taxonomy**: Sparse regions, wrong attractors, competing attractors, know-generate gaps
+- **CoT two-process model**: Reasoning traversal vs verbalization traversal, with empirical support from Anthropic/OpenAI 2025
+- **Constraint Functor**: Category-theoretic formalization of the LLM-physics structural correspondence
+- **Empirical correspondence section**: 28 citations mapping framework claims to 2023-2025 research
+
 ## Document Summaries
 
 ### 1. EM_analysis_001.md - Grok Heavy Analysis
