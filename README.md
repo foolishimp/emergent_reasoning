@@ -1,20 +1,18 @@
 # Emergent Reasoning in Large Language Models
 
-## Abstract
+## A Topological and Constraint-Based Formalization
 
-This repository contains a comprehensive analysis of emergent reasoning capabilities in Large Language Models (LLMs), exploring how logical reasoning emerges from topological structures in high-dimensional embedding spaces. The research examines the theoretical framework proposed by Dimitar Popov in "Emergent Reasoning in Large Language Models: Soft Unification, Constraint Mechanisms, and Computational Traversal" and provides both critical analysis and practical simulations demonstrating these concepts.
+This paper proposes a unified formal framework explaining how LLMs produce structured inference through *topology-constrained traversal* within a learned semantic manifold. The Transformer architecture is reinterpreted as a dynamical system whose core computation is a *preferred direction function* — an instance of local preorder traversal on a constraint manifold — implicitly implemented by attention. Context induces constraint sets; embeddings give rise to conceptual topology; attention performs soft, graded unification analogous to symbolic unification; and trajectories over the manifold follow structured flows that manifest as reasoning.
 
-The work investigates how LLMs exhibit reasoning behaviors through "soft unification" mechanisms—probabilistic, attention-driven matching processes that differ fundamentally from traditional symbolic AI approaches. By treating LLM embeddings as dynamic topological spaces where attention mechanisms act as constraint propagators, we demonstrate how logical inference emerges without explicit symbolic rules. The analysis extends to explaining phenomena like hallucinations through topological misalignment and explores implications for hybrid neural-symbolic architectures.
+Embedding clusters form proto-symbolic attractor regions — Markov objects with approximate conditional independence boundaries — enabling symbolic-like behavior to emerge from continuous computations. Hallucinations arise from multiple structural causes: trajectory exit from well-constrained regions, competing attractor interference, and misleading constraint structure. The framework bridges connectionist and symbolic AI by showing both paradigms instantiate a shared abstract unification principle — one discrete and explicit, the other continuous and implicit.
 
-## Research Paper
+**Paper**: [emergent_reasoning_v3.md](emergent_reasoning_v3.md) | [emergent_reasoning_v3.pdf](emergent_reasoning_v3.pdf)
+**Published on**: [Zenodo](https://zenodo.org/records/16592400)
+**Parent framework**: [Constraint-Emergence Ontology](https://github.com/foolishimp/constraint_emergence_ontology)
 
-The theoretical foundation for this work is available at: [https://zenodo.org/records/16592400](https://zenodo.org/records/16592400)
+## Version 3 (February 2026)
 
-### Version 3 (February 2026)
-
-[emergent_reasoning_v3.md](emergent_reasoning_v3.md) | [emergent_reasoning_v3.pdf](emergent_reasoning_v3.pdf)
-
-Version 3 incorporates backflows from the mature [Constraint-Emergence Ontology](https://github.com/foolishimp/constraint_emergence_ontology):
+Version 3 incorporates backflows from the mature Constraint-Emergence Ontology:
 
 - **Local preorder traversal**: D(x,c) reframed as an instance of a universal computational primitive
 - **Markov object alignment**: Proto-symbols formalized as Markov objects with the Conditional Independence Conjecture
