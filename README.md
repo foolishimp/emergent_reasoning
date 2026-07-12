@@ -1,81 +1,147 @@
 # Emergent Reasoning in Large Language Models
 
-## A Topological and Constraint-Based Formalization
+Research on constraint-conditioned transformer computation, soft unification,
+proto-symbolic structure, and candidate Markov objects.
 
-This paper proposes a unified formal framework explaining how LLMs produce structured inference through *topology-constrained traversal* within a learned semantic manifold. The Transformer architecture is reinterpreted as a dynamical system whose core computation is a *preferred direction function* — an instance of local preorder traversal on a constraint manifold — implicitly implemented by attention. Context induces constraint sets; embeddings give rise to conceptual topology; attention performs soft, graded unification analogous to symbolic unification; and trajectories over the manifold follow structured flows that manifest as reasoning.
+## Current Research Draft
 
-Embedding clusters form proto-symbolic attractor regions — Markov objects with approximate conditional independence boundaries — enabling symbolic-like behavior to emerge from continuous computations. Hallucinations arise from multiple structural causes: trajectory exit from well-constrained regions, competing attractor interference, and misleading constraint structure. The framework bridges connectionist and symbolic AI by showing both paradigms instantiate a shared abstract unification principle — one discrete and explicit, the other continuous and implicit.
+**Version 4.0**:
+[emergent_reasoning_v4.md](emergent_reasoning_v4.md)
 
-**Paper**: [emergent_reasoning_v3.md](emergent_reasoning_v3.md) | [emergent_reasoning_v3.pdf](emergent_reasoning_v3.pdf)
-**Published on**: [Zenodo](https://zenodo.org/records/16592399)
-**Parent framework**: [Constraint-Emergence Ontology](https://github.com/foolishimp/constraint_emergence_ontology)
+**Title**: *Emergent Reasoning in Large Language Models:
+Constraint-Conditioned Traversal, Soft Unification, and Candidate Markov
+Objects*
 
-## Version 3 (February 2026)
+**Status**: Draft. Version 4.0 is the mutable research manuscript in this
+repository. It has not yet been published as a release cut.
 
-Version 3 incorporates backflows from the mature Constraint-Emergence Ontology:
+The v4 rewrite:
 
-- **Local preorder traversal**: D(x,c) reframed as an instance of a universal computational primitive
-- **Markov object alignment**: Proto-symbols formalized as Markov objects with the Conditional Independence Conjecture
-- **Multi-causal hallucination taxonomy**: Sparse regions, wrong attractors, competing attractors, know-generate gaps
-- **CoT two-process model**: Reasoning traversal vs verbalization traversal, with empirical support from Anthropic/OpenAI 2025
-- **Constraint Functor**: Category-theoretic formalization of the LLM-physics structural correspondence
-- **Empirical correspondence section**: 28 citations mapping framework claims to 2023-2025 research
+- anchors the public lineage to v1.0 and v3.0;
+- replaces the single-vector autonomous-flow shorthand with the full
+  transformer state tensor and four separate time axes;
+- preserves context-conditioned soft unification without claiming literal
+  Prolog equivalence;
+- includes the complete internal experiment ledger, including failed and
+  confounded gates;
+- distinguishes semantic objects from SAE, direction, subspace,
+  attribution-graph, and J-space charts;
+- records that no executed chart has established a formal Markov blanket;
+- defines attribution-graph screening, J-space mediation, and semantic
+  behavioural assurance as distinct successor tests;
+- separates proposer, evaluator, verifier, selector, grounding, and authority;
+- restores the modular hybrid architecture with governed memory and explicit
+  intent.
+
+The approved rewrite structure is retained in
+[emergent_reasoning_v4_rewrite_outline.md](emergent_reasoning_v4_rewrite_outline.md)
+as design lineage.
+
+## Published Cuts
+
+### Version 3.0
+
+Version 3.0 is the latest published cut.
+
+- [Markdown](emergent_reasoning_v3.md)
+- [PDF](emergent_reasoning_v3.pdf)
+- [Zenodo record 18653552](https://doi.org/10.5281/zenodo.18653552)
+- Published: 16 February 2026
+
+Version 3 introduced the local-preorder traversal formalism, the explicit
+Markov-object and Conditional Independence Conjecture bridge, the
+reasoning/verbalization split, the expanded hallucination taxonomy, and the
+Constraint Functor. Version 4 retains these as lineage but reprices their
+mechanical and empirical status.
+
+### Version 1.0
+
+Version 1.0 is the first public cut of the core thesis.
+
+- [Source artifact](archive/EmergentReasoning_04.md)
+- [Zenodo record 16592400](https://doi.org/10.5281/zenodo.16592400)
+- Published: 30 July 2025
+- Published-file MD5: `db22d44bacf8a949ea0211f63a783478`
+
+It established the public claims of context-sensitive soft unification,
+overlapping local rather than monolithic logical structure, fuzzy
+proto-symbolic boundaries, the intent distinction, and modular hybrid
+architecture.
+
+The series concept DOI is
+[10.5281/zenodo.16592399](https://doi.org/10.5281/zenodo.16592399).
+
+This repository was created as a publishing surface. Its commit dates record
+publication packaging, not the full pre-public development chronology.
+
+## Current Research Position
+
+| Claim | Current disposition |
+|---|---|
+| Context-conditioned soft binding | conjecture |
+| Extended visible or latent computation can improve reasoning | empirical finding plus interpretive stance |
+| Coherent semantic charts exist for selected identities | empirical finding within tested populations |
+| SAE active sets or low-rank residual charts are clean boundaries | empirical finding, negative result for tested charts |
+| Candidate charts form a formal Markov blanket | conjecture; promotion failed |
+| Candidate semantic objects recur across architectures | open exposure |
+| Reasoning-relevant computation and verbalization can diverge | empirical finding plus interpretive stance |
+| A privileged J-space mediates some flexible reasoning | empirical finding, bounded population |
+| Governed memory, typed tools, and selection authority improve assurance | derived-within-framework |
+
+The July 2026 J-space result is recorded in v4 as later conceptual convergence
+with the pre-public and v3 research line, not as an earlier public-priority
+claim.
+
+## Evidence Base
+
+The v4 internal evidence ledger is sourced from the sibling
+`constraint_emergence_ontology` research programme:
+
+- [`empirical_results.md`](../constraint_emergence_ontology/markov_object_research/empirical_results.md)
+- [`emergent_markov_object_evidence.md`](../constraint_emergence_ontology/markov_object_research/emergent_markov_object_evidence.md)
+- [`markov_object_assurance_program.md`](../constraint_emergence_ontology/markov_object_research/markov_object_assurance_program.md)
+
+These artifacts record the positive, failed, partial, and confounded outcomes
+across experiment series 08-25, 32-41, and 45-47b. The manuscript does not
+treat the parent ontology as empirical authority.
 
 ## Repository Structure
 
-```
+```text
 emergent_reasoning/
-├── README.md
-├── emergent_reasoning_v3.md          # Current paper (v3)
-├── emergent_reasoning_v3.pdf
-├── archive/                          # Historical drafts
-│   ├── EmergentReasoning.md          # Original draft
-│   ├── EmergentReasoning_01.md       # Iteration 1
-│   ├── EmergentReasoning_02.md       # Iteration 2
-│   ├── EmergentReasoning_03.md       # Iteration 3
-│   ├── EmergentReasoning_04.md       # Iteration 4
-│   └── *.pdf                         # Corresponding PDFs
-└── reviews/                          # Peer reviews & simulations
-    ├── EM_analysis_001.md/pdf        # Grok Heavy analysis
-    ├── EMR_simulation_001.md/pdf     # Grok Heavy simulation
-    └── EMR_ExtendedSimulation.md/pdf # Extended hallucination simulation
+|-- README.md
+|-- emergent_reasoning_v4.md                  # Current research draft
+|-- emergent_reasoning_v4_rewrite_outline.md  # Approved rewrite structure
+|-- emergent_reasoning_v3.md                  # Latest published source cut
+|-- emergent_reasoning_v3.pdf
+|-- archive/                                   # Earlier drafts and PDFs
+`-- reviews/                                   # Historical reviews and simulations
 ```
 
-## Reviews & Simulations
+## Historical Reviews and Simulations
 
-### 1. [EM_analysis_001.md](reviews/EM_analysis_001.md) - Grok Heavy Analysis
+- [EM_analysis_001.md](reviews/EM_analysis_001.md): early framework review.
+- [EMR_simulation_001.md](reviews/EMR_simulation_001.md): early NetworkX-based
+  simulation and theoretical analysis.
+- [EMR_ExtendedSimulation.md](reviews/EMR_ExtendedSimulation.md): early
+  hallucination and mitigation simulation.
 
-Comprehensive peer-review evaluation of the theoretical framework from a senior AI researcher's perspective. Covers soft unification analysis, Markov blankets framework, dynamic constraint propagation, and recommendations for empirical validation.
-
-### 2. [EMR_simulation_001.md](reviews/EMR_simulation_001.md) - Grok Heavy Simulation
-
-Demonstrates through theoretical arguments and practical NetworkX simulation that logical reasoning can emerge from topological structures in LLMs. Includes empirical evidence synthesis and topological memory analysis.
-
-### 3. [EMR_ExtendedSimulation.md](reviews/EMR_ExtendedSimulation.md) - Extended Simulation
-
-Extends the analysis to explain hallucinations through logical topology, identifying four key topological causes and proposing mitigation strategies including RAG, knowledge graph anchoring, and structured prompting.
-
-## Key Insights
-
-1. **Emergent vs. Explicit Logic**: LLMs demonstrate reasoning capabilities that emerge from probabilistic navigation of high-dimensional spaces rather than explicit logical rules, challenging traditional symbolic AI paradigms.
-
-2. **Topology as Foundation**: The structure of embedding spaces and their dynamic, context-dependent activation through attention mechanisms fundamentally determines reasoning capabilities and failure modes.
-
-3. **Hallucinations as Topological Failures**: Rather than random errors, hallucinations represent systematic failures in topological traversal, offering paths toward targeted mitigation strategies.
-
-4. **Hybrid Architecture Potential**: The framework suggests promising directions for neural-symbolic integration, leveraging LLMs' pattern matching with explicit constraint systems for more robust reasoning.
-
-## Research Implications
-
-This work contributes to understanding LLMs not as truth machines but as sophisticated pattern-matchers navigating learned topological spaces. The analysis provides actionable insights for:
-
-- **AI Safety**: Understanding hallucination mechanisms for improved reliability
-- **Interpretability**: Using topological analysis to probe and understand model behavior
-- **System Design**: Informing hybrid architectures that combine neural and symbolic approaches
-- **Practical Applications**: Guiding prompt engineering and fine-tuning strategies
+These are historical commentary and evidence-generation attempts. They do not
+outrank the current manuscript or the primary experiment ledgers.
 
 ## Citation
 
-If you use this analysis in your research, please cite:
+For the latest published cut:
 
-Popov, D. (2026). Emergent Reasoning in Large Language Models: A Topological and Constraint-Based Formalization (Version 3). Zenodo. https://doi.org/10.5281/zenodo.16592399
+> Popov, D. (2026). *Emergent Reasoning in Large Language Models: A
+> Topological and Constraint-Based Formalization* (Version 3.0). Zenodo.
+> https://doi.org/10.5281/zenodo.18653552
+
+For the original public thesis:
+
+> Popov, D. (2025). *Emergent Reasoning in Large Language Models: Soft
+> Unification, Constraint Mechanisms, and Computational Traversal* (Version
+> 1.0). Zenodo. https://doi.org/10.5281/zenodo.16592400
+
+Do not cite v4 as a published cut until it receives an immutable release and
+publication record.
